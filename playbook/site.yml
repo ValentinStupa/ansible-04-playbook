@@ -1,0 +1,17 @@
+---
+# - name: Install Lighthouse
+#   hosts: lighthouse
+#   roles:
+#     - lighthouse
+# yamllint disable-line rule:comments
+#---------------
+- name: Install Clickhouse
+  hosts: clickhouse
+  roles:
+    - clickhouse
+# yamllint disable-line rule:comments
+#---------------
+- name: Install Vector
+  hosts: vector
+  roles:
+    - vector
